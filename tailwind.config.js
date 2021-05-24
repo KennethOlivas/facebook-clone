@@ -1,4 +1,5 @@
 module.exports = {
+  node: "jit",
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: "media", // or 'media' or 'class'
   theme: {
@@ -7,5 +8,5 @@ module.exports = {
   variants: {
     backgroundColor: ['focus','hover','active','responsive'],
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 }
