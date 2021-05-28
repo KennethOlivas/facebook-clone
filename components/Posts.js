@@ -3,12 +3,13 @@ import { db } from "../firebase";
 import Post from "./Post";
 
 
-function Posts() {
+function Posts({ posts }) {
     const [realtimePosts] = useCollection(db.collection("posts").orderBy("timestamp","desc"));
 
     return <div>
-        
-            {realtimePosts?.docs.map((posted) => (
+            {
+            realtimePosts ?
+            realtimePosts?.docs.map((posted) => (
                 <Post 
                  key={posted.id}
                  name={posted.data().name}
@@ -18,7 +19,17 @@ function Posts() {
                  image={posted.data().image}
                  postImage={posted.data().postImage}
                 />
-             ))}
+             )) : posts?.docs.map( (post) => (
+                    <Post 
+                    key={post.id}
+                    name={post.name}
+                    message={post.message}
+                    email={post.email}
+                    timestamp={post.timestamp}
+                    image={post.image}
+                    postImage={post.postImage}
+                   />
+                )) }
         
     </div>
 }
