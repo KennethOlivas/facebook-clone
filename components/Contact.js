@@ -3,7 +3,7 @@ import Image from "next/image"
 function Contact({src, name}) {
     return (
         <div className="flex items-center space-x-3 mb-2 relative bg-gray-200 cursor-pointer p-2 rounded-xl hover:bg-gray-300
-        transition-all duration-150">
+        transition-all duration-150 dark:text-white dark:bg-dark-gray-background dark:hover:bg-dark-gray-hover">
             <Image 
             className="rounded-full"
             src={src} 

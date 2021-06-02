@@ -5,12 +5,12 @@
 @layer components {
     .icon {
         @apply p-2 h-11 w-11 bg-gray-200 rounded-full text-gray-700
-        cursor-pointer hover:bg-gray-300;
+        cursor-pointer hover:bg-gray-300 dark:hover:bg-dark-gray-hover dark:bg-dark-icon dark:text-white;
     }
 
     .inputIcon {
         @apply flex items-center space-x-1 hover:bg-gray-100 flex-grow
-        justify-center p-2 cursor-pointer rounded-xl;
+        justify-center p-2 cursor-pointer rounded-xl dark:hover:bg-dark-gray-hover;
     }
 
     .card-zoom {

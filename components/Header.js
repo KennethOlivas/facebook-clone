@@ -28,7 +28,7 @@ function Header() {
 
     return (
         <div>
-            <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
+            <div className="sticky top-0 z-50 bg-white dark:bg-dark-gray flex items-center p-2 lg:px-5 shadow-md">
                 {/* Left */}
                 <div className="flex items-center">
                     <Image src="https://links.papareact.com/5me" 
@@ -37,9 +37,9 @@ function Header() {
                     layout="fixed"
                     />
             
-                    <div className="flex ml-2 items-center rounded-full bg-gray-200 p-2">
-                        <SearchIcon className="h-6 text-gray-600"/>
-                        <input className="hidden md:inline-flex bg-transparent flex ml-2 items-center outline-none flex-shrink" type="text" placeholder="Search Facebook"/>
+                    <div className="flex ml-2 items-center rounded-full bg-gray-200 p-2 dark:bg-dark-gray-background">
+                        <SearchIcon className="h-6 text-gray-600 "/>
+                        <input className="hidden md:inline-flex bg-transparent flex ml-2 items-center outline-none flex-shrink dark:text-white" type="text" placeholder="Search Facebook"/>
                     </div>
                 </div>
                 {/* Center */}
@@ -60,7 +60,7 @@ function Header() {
                     {/* Profile */}
                     <div   
                    
-                    className="p-1 hidden xl:inline-flex hover:bg-gray-200 rounded-full flex items-center cursor-pointer">
+                    className="p-1 hidden xl:inline-flex hover:bg-gray-200 dark:hover:bg-dark-gray-hover rounded-full flex items-center cursor-pointer">
                         <Image 
                         className="rounded-full"
                         src={session.user.image}
@@ -68,7 +68,7 @@ function Header() {
                         height={40}
                         layout="fixed"
                         />  
-                        <p className="whitespace-nowrap font-semibold ml-2 pr-1">{session.user.name}</p>
+                        <p className="whitespace-nowrap font-semibold ml-2 pr-1 dark:text-white">{session.user.name}</p>
                     </div>
                 
                 <PlusIcon className="icon" />

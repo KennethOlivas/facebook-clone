@@ -74,7 +74,7 @@ function InputBox() {
         setImageToPost(null);
     }
 
-    return <div className="bg-white p-2 rounded-xl text-gray-500 shadow-md font-medium mt-6 ">
+    return <div className="bg-white p-2 rounded-xl text-gray-500 dark:bg-dark-gray dark:text-white shadow-md font-medium mt-6 ">
         <div className="flex space-x-4 p-4 items-center ">
          
             <Image
@@ -88,7 +88,7 @@ function InputBox() {
             <from onSubmit={sendPost} className="flex flex-1" >
                 <input onKeyDown={submitKey}
                  ref={inputRef}
-                 className="rounded-full h-12 placeholder-gray-500 bg-gray-200 flex-grow px-5 focus:outline-none hover:bg-gray-300" 
+                 className="rounded-full h-12 placeholder-gray-500 bg-gray-200 dark:bg-dark-gray-search dark:hover:bg-dark-gray-hover dark:text-white flex-grow px-5 focus:outline-none hover:bg-gray-300" 
                  type="text" 
                  placeholder={`What's on your mind, ${session.user.name} ?`} 
                  />
@@ -107,7 +107,7 @@ function InputBox() {
             </from>
         </div>
 
-        <div className="flex justify-evenly p-3 border-t">
+        <div className="flex justify-evenly p-3 border-t dark:border-dark-gray-hover">
             <div className="inputIcon">
                 <VideoCameraIcon className="h-7 text-red-500" />
                 <p className="text-xs sm:text-sm xl:text-base">

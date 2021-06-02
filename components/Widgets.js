@@ -35,9 +35,9 @@ function Widgets() {
             <div className="flex justify-between items-center text-gray-500 mb-5">
                 <h2 className="text-xl mx-2 cursor-default">Contacts</h2>
                 <div className="flex space-x-2">
-                    <VideoCameraIcon className="h-8 p-1 hover:bg-gray-300 rounded-full transition-all duration-150 cursor-pointer"/>
-                    <SearchIcon className="h-8 p-1 hover:bg-gray-300 rounded-full transition-all duration-150 cursor-pointer"/>
-                    <DotsHorizontalIcon className="h-8 p-1 hover:bg-gray-300 rounded-full transition-all duration-150 cursor-pointer"/>
+                    <VideoCameraIcon className="h-8 p-1 hover:bg-gray-300 rounded-full transition-all duration-150 cursor-pointer dark:hover:bg-dark-gray-hover"/>
+                    <SearchIcon className="h-8 p-1 hover:bg-gray-300 rounded-full transition-all duration-150 cursor-pointer dark:hover:bg-dark-gray-hover"/>
+                    <DotsHorizontalIcon className="h-8 p-1 hover:bg-gray-300 rounded-full transition-all duration-150 cursor-pointer dark:hover:bg-dark-gray-hover"/>
                 </div>
             </div>
 
