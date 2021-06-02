@@ -76,10 +76,10 @@ function Header() {
                 <BellIcon className="icon" />
                 <Menu as="div">
                     <Menu.Button className="focus:outline-none"><ChevronDownIcon className="icon mt-2" /></Menu.Button>
-                    <Menu.Items class={` absolute right-0  rounded-lg mt-1 bg-white border  shadow-xl mr-4`}>   
+                    <Menu.Items class={` absolute right-0  rounded-lg mt-1 bg-white border dark:border-dark-gray dark:text-white  shadow-xl mr-4 dark:bg-dark-gray`}>   
                         <div   
                         
-                        className="hover:bg-gray-200 pl-4 flex items-center cursor-pointer">
+                        className="hover:bg-gray-200 pl-4 flex items-center cursor-pointer rounded-t-lg dark:hover:bg-dark-gray-hover">
                             <Image 
                             className="rounded-full "
                             src={session.user.image}
@@ -93,27 +93,27 @@ function Header() {
                             </div>
                         
                         </div>
-                        <hr className="mx-2"></hr>
+                        <hr className="mx-2 dark:text-dark-gray-hover"></hr>
                         <div   
-                        className="hover:bg-gray-200 pl-4 flex items-center cursor-pointer">
-                             <CogIcon  className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full"/>
+                        className="hover:bg-gray-200 pl-4 flex items-center cursor-pointer dark:hover:bg-dark-gray-hover dark:text-white">
+                             <CogIcon  className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full dark:bg-dark-gray-search "/>
                             <div className="grid py-2 pr-6">
                             <p className="whitespace-nowrap font-semibold ml-2 pr-1 ">Give feedback</p>
-                            <p className="whitespace-nowrap text-gray-500  ml-2 pr-1 text-sm">Help us improve the new Facebook</p>
+                            <p className="whitespace-nowrap text-gray-500  ml-2 pr-1 text-sm ">Help us improve the new Facebook</p>
                             </div>
                         </div>
-                        <hr className="mx-2"></hr>
+                        <hr className="mx-2 dark:text-dark-gray-hover"></hr>
 
-                        <button class="focus:outline-none flex w-full font-semibold text-left items-center transition-colors duration-200 px-4 py-2 text-normal text-gray-900 rounded hover:bg-gray-200">    
-                        <CogIcon className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full"/> Settings
+                        <button class="focus:outline-none flex w-full font-semibold text-left items-center transition-colors duration-200 px-4 py-2 text-normal text-gray-900 rounded hover:bg-gray-200 dark:hover:bg-dark-gray-hover dark:text-white">    
+                        <CogIcon className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full dark:bg-dark-gray-search"/> Settings
                         </button>
                            
-                        <button class="focus:outline-none flex w-full font-semibold text-left items-center transition-colors duration-200 px-4 py-2 text-normal text-gray-900 rounded hover:bg-gray-200">    
-                        <MoonIcon className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full"/> DarkMode
+                        <button class="focus:outline-none flex w-full font-semibold text-left items-center transition-colors duration-200 px-4 py-2 text-normal text-gray-900 rounded hover:bg-gray-200 dark:hover:bg-dark-gray-hover dark:text-white">    
+                        <MoonIcon className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full dark:bg-dark-gray-search"/> DarkMode
                         </button>
                            
-                        <button onClick={ signOut }  class="focus:outline-none flex w-full font-semibold text-left items-center transition-colors duration-200 px-4 py-2 text-normal text-gray-900 rounded hover:bg-gray-200">    
-                        <LogoutIcon className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full"/> Logout
+                        <button onClick={ signOut }  class="focus:outline-none flex w-full font-semibold text-left items-center transition-colors duration-200 px-4 py-2 text-normal text-gray-900 rounded hover:bg-gray-200 dark:hover:bg-dark-gray-hover dark:text-white">    
+                        <LogoutIcon className="h-10 w-10 py-2 px-2 mr-2 bg-gray-300 text-center rounded-full dark:bg-dark-gray-search"/> Logout
                         </button>
                         <div className="mx-4 text-sm text-gray-600 mb-2">
                         <p>Privacy  · Terms  · Advertising  · Ad Choices   · Cookies ·</p>
