@@ -5,12 +5,12 @@ import Post from "./Post";
 
 function Posts({ posts }) {
     const [realtimePosts] = useCollection(db.collection("posts").orderBy("timestamp","desc"));
-
     return <div>
             {
             realtimePosts ?
             realtimePosts?.docs.map((posted) => (
                 <Post 
+                 id={posted.id}
                  key={posted.id}
                  name={posted.data().name}
                  message={posted.data().message}
