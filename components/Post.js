@@ -138,7 +138,7 @@ function Post({ name, message, email, timestamp, image, postImage, id }) {
                         
                         <div className="mt-2">
                             
-                        <input 
+                        <input  
                         className="w-full rounded-full h-12 placeholder-gray-500 bg-gray-200 dark:bg-dark-gray-search dark:hover:bg-dark-gray-hover dark:text-white flex-grow px-5 focus:outline-none hover:bg-gray-300" 
                         type="text"
                         ref={inputRef}
